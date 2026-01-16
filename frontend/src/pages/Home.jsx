@@ -81,8 +81,8 @@ const Home = () => {
             </div>
             
             <h2 className="md:text-6xl !font-bold !text-4xl mb-6 text-white">
-              MS-CIT Online Course Computer
-Certification  Computer Certification <span className="bg-gradient-to-r from-amber-400 to-yellow-500 bg-clip-text text-transparent">Government Recognized</span> Computer Certification
+              MS-CIT Online Course  
+              <span className="bg-gradient-to-r from-amber-400 to-yellow-500 bg-clip-text text-transparent">Government Recognized</span> Computer Certification
             </h2>
             
             <p className="text-xl md:text-2xl text-gray-300 mb-10 leading-relaxed">
