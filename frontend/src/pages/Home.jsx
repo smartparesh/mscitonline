@@ -6,7 +6,7 @@ import { Label } from '../components/ui/label';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../components/ui/accordion';
 import { Badge } from '../components/ui/badge';
 import { Phone, MessageCircle, CheckCircle, GraduateCapIcon, Users, Clock, Monitor, Award, BookOpen, Laptop } from 'lucide-react';
-import { useToast } from '../hooks/use-toast';
+import { toast } from 'sonner';
 
 const Home = () => {
   const { toast } = useToast();
