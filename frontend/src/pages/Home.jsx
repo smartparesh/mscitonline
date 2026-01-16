@@ -32,10 +32,10 @@ const Home = () => {
       toast.error('Please fill all fields');
       return;
     }
-    
+
     const message = `Hi, I'm ${formData.fullName} from ${formData.city}. I want to enquire about MS-CIT Online Course. My mobile number is ${formData.mobile}.`;
     handleWhatsAppClick(message);
-    
+
     // Reset form
     setFormData({ fullName: '', mobile: '', city: '' });
   };
@@ -46,11 +46,11 @@ const Home = () => {
       <header className="bg-black text-white py-3 px-6 sticky top-0 z-50 shadow-lg">
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center gap-3">
-            <img 
-              src="https://customer-assets.emergentagent.com/job_3dada212-0c7a-49f3-82cf-10ce7550a554/artifacts/oc81m7m1_SMART%20LOGO%20150x150.png" 
-              alt="Smart Education Centre Logo" 
-              className="w-[60px] h-[60px] object-contain"
-            />
+            <img
+              src="https://customer-assets.emergentagent.com/job_3dada212-0c7a-49f3-82cf-10ce7550a554/artifacts/oc81m7m1_SMART%20LOGO%20150x150.png"
+              alt="Smart Education Centre Logo"
+              className="w-[60px] h-[60px] object-contain" />
+
             <div>
               <h1 className="text-xl md:text-2xl font-bold bg-gradient-to-r from-amber-400 to-yellow-500 bg-clip-text text-transparent leading-tight">Smart Education Centre</h1>
               <p className="text-xs md:text-sm text-gray-300">Maharashtra Government Recognized</p>
@@ -80,8 +80,8 @@ const Home = () => {
               <Badge className="bg-amber-500 text-black hover:bg-amber-600 px-4 py-2 text-sm transition-all duration-300">Online + Recorded Classes</Badge>
             </div>
             
-            <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-              MS-CIT Online Course – <span className="bg-gradient-to-r from-amber-400 to-yellow-500 bg-clip-text text-transparent">Government Recognized</span> Computer Certification
+            <h2 className="md:text-6xl !font-bold !text-4xl mb-6 text-white">
+              MS-CIT Online Course Computer Certification <span className="bg-gradient-to-r from-amber-400 to-yellow-500 bg-clip-text text-transparent">Government Recognized</span> Computer Certification
             </h2>
             
             <p className="text-xl md:text-2xl text-gray-300 mb-10 leading-relaxed">
@@ -372,7 +372,7 @@ const Home = () => {
                   <CardTitle className="text-white">Mode</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-amber-400 font-bold text-xl">Online<br/>(Live + Recorded)</p>
+                  <p className="text-amber-400 font-bold text-xl">Online<br />(Live + Recorded)</p>
                 </CardContent>
               </Card>
               
@@ -512,10 +512,10 @@ const Home = () => {
                       id="fullName"
                       placeholder="Enter your full name"
                       value={formData.fullName}
-                      onChange={(e) => setFormData({...formData, fullName: e.target.value})}
+                      onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
                       className="bg-gray-800 border-gray-700 text-white placeholder:text-gray-500 focus:border-amber-500 focus:ring-amber-500 h-12 text-base"
-                      required
-                    />
+                      required />
+
                   </div>
                   
                   <div className="space-y-2">
@@ -525,10 +525,10 @@ const Home = () => {
                       type="tel"
                       placeholder="Enter your mobile number"
                       value={formData.mobile}
-                      onChange={(e) => setFormData({...formData, mobile: e.target.value})}
+                      onChange={(e) => setFormData({ ...formData, mobile: e.target.value })}
                       className="bg-gray-800 border-gray-700 text-white placeholder:text-gray-500 focus:border-amber-500 focus:ring-amber-500 h-12 text-base"
-                      required
-                    />
+                      required />
+
                   </div>
                   
                   <div className="space-y-2">
@@ -537,10 +537,10 @@ const Home = () => {
                       id="city"
                       placeholder="Enter your city"
                       value={formData.city}
-                      onChange={(e) => setFormData({...formData, city: e.target.value})}
+                      onChange={(e) => setFormData({ ...formData, city: e.target.value })}
                       className="bg-gray-800 border-gray-700 text-white placeholder:text-gray-500 focus:border-amber-500 focus:ring-amber-500 h-12 text-base"
-                      required
-                    />
+                      required />
+
                   </div>
                   
                   <Button type="submit" className="w-full bg-gradient-to-r from-amber-500 to-yellow-600 text-black hover:from-amber-600 hover:to-yellow-700 h-14 text-lg font-bold transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1">
@@ -605,8 +605,8 @@ const Home = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>);
+
 };
 
 export default Home;
