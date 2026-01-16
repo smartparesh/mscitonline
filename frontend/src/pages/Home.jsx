@@ -80,10 +80,10 @@ const Home = () => {
               <Badge className="bg-amber-500 text-black hover:bg-amber-600 px-4 py-2 text-sm transition-all duration-300">Online + Recorded Classes</Badge>
             </div>
             
-            <h2 className="md:text-6xl !font-bold !text-4xl mb-6 text-white">
-              MS-CIT Online Course
-  
-              <span className="bg-gradient-to-r from-amber-400 to-yellow-500 bg-clip-text text-transparent">Government Recognized</span> Computer Certification
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight">
+              <span className="block mb-3">MS-CIT Online Course</span>
+              <span className="block bg-gradient-to-r from-amber-400 to-yellow-500 bg-clip-text text-transparent mb-3">Government Recognized</span>
+              <span className="block">Computer Certification</span>
             </h2>
             
             <p className="text-xl md:text-2xl text-gray-300 mb-10 leading-relaxed">
