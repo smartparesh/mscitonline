@@ -437,7 +437,7 @@ const Home = () => {
               
               <div className="relative group">
                 <div className="absolute inset-0 bg-gradient-to-br from-amber-500 to-yellow-600 rounded-2xl transform rotate-3 group-hover:rotate-6 transition-all duration-300"></div>
-                <img src="https://images.unsplash.com/photo-1638636241638-aef5120c5153" alt="Certificate" className="relative rounded-2xl shadow-2xl w-full h-[400px] object-cover" />
+                <img src="https://customer-assets.emergentagent.com/job_3dada212-0c7a-49f3-82cf-10ce7550a554/artifacts/tqa71y74_ms-cit%20certificate.jpg" alt="MS-CIT Certificate" className="relative rounded-2xl shadow-2xl w-full h-[400px] object-cover" />
               </div>
             </div>
           </div>
