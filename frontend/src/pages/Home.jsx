@@ -231,7 +231,7 @@ const Home = () => {
                 <Card className="bg-gradient-to-br from-gray-50 to-white border-2 border-gray-100 hover:border-amber-500 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
                   <CardHeader>
                     <div className="bg-gradient-to-br from-amber-500 to-yellow-600 w-12 h-12 rounded-lg flex items-center justify-center mb-3">
-                      <GraduateCapIcon className="h-6 w-6 text-black" />
+                      <GraduationCap className="h-6 w-6 text-black" />
                     </div>
                     <CardTitle className="text-lg text-black">Live Online Classes</CardTitle>
                   </CardHeader>
