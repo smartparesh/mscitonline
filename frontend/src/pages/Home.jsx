@@ -297,7 +297,7 @@ const Home = () => {
               <Card className="text-center hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border-2 border-gray-100 hover:border-amber-500">
                 <CardHeader>
                   <div className="bg-gradient-to-br from-amber-500 to-yellow-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
-                    <GraduateCapIcon className="h-8 w-8 text-black" />
+                    <GraduationCap className="h-8 w-8 text-black" />
                   </div>
                   <CardTitle className="text-black">Students</CardTitle>
                 </CardHeader>
