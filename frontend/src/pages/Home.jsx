@@ -46,9 +46,11 @@ const Home = () => {
       <header className="bg-black text-white py-4 px-6 sticky top-0 z-50 shadow-lg">
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center gap-3">
-            <div className="w-[150px] h-[150px] bg-gradient-to-br from-amber-500 to-yellow-600 rounded-lg flex items-center justify-center border-2 border-amber-400 shadow-xl">
-              <span className="text-black font-bold text-sm text-center px-2">Logo<br/>150x150</span>
-            </div>
+            <img 
+              src="https://customer-assets.emergentagent.com/job_3dada212-0c7a-49f3-82cf-10ce7550a554/artifacts/oc81m7m1_SMART%20LOGO%20150x150.png" 
+              alt="Smart Education Centre Logo" 
+              className="w-[150px] h-[150px] object-contain"
+            />
             <div>
               <h1 className="text-2xl font-bold bg-gradient-to-r from-amber-400 to-yellow-500 bg-clip-text text-transparent">Smart Education Centre</h1>
               <p className="text-sm text-gray-300">Maharashtra Government Recognized</p>
