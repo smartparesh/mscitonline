@@ -1,7 +1,7 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import { Toaster } from './components/ui/sonner';
+import { Toaster } from 'sonner';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
           <Route path="/" element={<Home />} />
         </Routes>
       </BrowserRouter>
-      <Toaster />
+      <Toaster position="top-center" richColors />
     </div>
   );
 }
