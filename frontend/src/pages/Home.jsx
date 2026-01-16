@@ -43,17 +43,17 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Header */}
-      <header className="bg-black text-white py-4 px-6 sticky top-0 z-50 shadow-lg">
+      <header className="bg-black text-white py-3 px-6 sticky top-0 z-50 shadow-lg">
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center gap-3">
             <img 
               src="https://customer-assets.emergentagent.com/job_3dada212-0c7a-49f3-82cf-10ce7550a554/artifacts/oc81m7m1_SMART%20LOGO%20150x150.png" 
               alt="Smart Education Centre Logo" 
-              className="w-[150px] h-[150px] object-contain"
+              className="w-[60px] h-[60px] object-contain"
             />
             <div>
-              <h1 className="text-2xl font-bold bg-gradient-to-r from-amber-400 to-yellow-500 bg-clip-text text-transparent">Smart Education Centre</h1>
-              <p className="text-sm text-gray-300">Maharashtra Government Recognized</p>
+              <h1 className="text-xl md:text-2xl font-bold bg-gradient-to-r from-amber-400 to-yellow-500 bg-clip-text text-transparent leading-tight">Smart Education Centre</h1>
+              <p className="text-xs md:text-sm text-gray-300">Maharashtra Government Recognized</p>
             </div>
           </div>
           <div className="hidden md:flex gap-3">
