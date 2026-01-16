@@ -81,7 +81,8 @@ const Home = () => {
             </div>
             
             <h2 className="md:text-6xl !font-bold !text-4xl mb-6 text-white">
-              MS-CIT Online Course Computer Certification <span className="bg-gradient-to-r from-amber-400 to-yellow-500 bg-clip-text text-transparent">Government Recognized</span> Computer Certification
+              MS-CIT Online Course Computer
+Certification  Computer Certification <span className="bg-gradient-to-r from-amber-400 to-yellow-500 bg-clip-text text-transparent">Government Recognized</span> Computer Certification
             </h2>
             
             <p className="text-xl md:text-2xl text-gray-300 mb-10 leading-relaxed">
@@ -508,13 +509,12 @@ const Home = () => {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="space-y-2">
                     <Label htmlFor="fullName" className="text-white text-base">Full Name *</Label>
-                    <Input
-                      id="fullName"
-                      placeholder="Enter your full name"
-                      value={formData.fullName}
-                      onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-                      className="bg-gray-800 border-gray-700 text-white placeholder:text-gray-500 focus:border-amber-500 focus:ring-amber-500 h-12 text-base"
-                      required />
+                    <Input id="fullName"
+                    placeholder="Enter your full name"
+                    value={formData.fullName}
+                    onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
+                    className="bg-gray-800 border-gray-700 text-white placeholder:text-gray-500 focus:border-amber-500 focus:ring-amber-500 h-12 text-base"
+                    required />
 
                   </div>
                   
