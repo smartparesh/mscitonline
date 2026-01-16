@@ -29,11 +29,7 @@ const Home = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!formData.fullName || !formData.mobile || !formData.city) {
-      toast({
-        title: "Please fill all fields",
-        description: "All fields are required",
-        variant: "destructive"
-      });
+      toast.error('Please fill all fields');
       return;
     }
     
