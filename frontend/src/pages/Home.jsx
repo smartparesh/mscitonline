@@ -9,7 +9,6 @@ import { Phone, MessageCircle, CheckCircle, GraduateCapIcon, Users, Clock, Monit
 import { toast } from 'sonner';
 
 const Home = () => {
-  const { toast } = useToast();
   const [formData, setFormData] = useState({
     fullName: '',
     mobile: '',
