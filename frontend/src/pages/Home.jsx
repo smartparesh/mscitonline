@@ -341,7 +341,7 @@ const Home = () => {
               <p className="text-xl font-bold bg-gradient-to-r from-amber-500 to-yellow-600 bg-clip-text text-transparent mb-6">Age is not a barrier. Anyone can learn.</p>
               <div className="relative group inline-block">
                 <div className="absolute inset-0 bg-gradient-to-br from-amber-500 to-yellow-600 rounded-2xl transform rotate-2 group-hover:rotate-3 transition-all duration-300"></div>
-                <img src="https://images.pexels.com/photos/6929180/pexels-photo-6929180.jpeg" alt="Diverse age group learning together" className="relative rounded-2xl shadow-2xl max-w-2xl w-full h-[300px] object-cover" />
+                <img src="https://images.unsplash.com/photo-1593442808882-775dfcd90699" alt="Indian students learning together" className="relative rounded-2xl shadow-2xl max-w-2xl w-full h-[300px] object-cover" />
               </div>
             </div>
           </div>
