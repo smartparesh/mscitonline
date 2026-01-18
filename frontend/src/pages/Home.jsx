@@ -569,6 +569,67 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Address & Location Section */}
+      <section className="py-20 px-6 bg-white">
+        <div className="container mx-auto">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-black">Visit Our <span className="bg-gradient-to-r from-amber-500 to-yellow-600 bg-clip-text text-transparent">Centre</span></h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-amber-500 to-yellow-600 mx-auto mb-12"></div>
+            
+            <div className="grid md:grid-cols-2 gap-8 items-start">
+              <div>
+                <Card className="border-2 border-amber-500 shadow-xl">
+                  <CardHeader>
+                    <CardTitle className="text-2xl text-black">Smart Education Centre</CardTitle>
+                  </CardHeader>
+                  <CardContent className="space-y-4">
+                    <div className="bg-gradient-to-r from-amber-50 to-yellow-50 p-6 rounded-lg border-l-4 border-amber-500">
+                      <p className="text-gray-700 text-lg leading-relaxed font-medium">
+                        BDD Chawl No. 48, Shop No. 18,<br/>
+                        Opp. Jambori Maidan, Worli,<br/>
+                        Mumbai - 400 018
+                      </p>
+                    </div>
+                    <div className="space-y-3 pt-4">
+                      <p className="flex items-center gap-3 text-gray-700">
+                        <Phone className="h-5 w-5 text-amber-500" />
+                        <span className="font-semibold">+91 9221763659</span>
+                      </p>
+                      <p className="flex items-center gap-3 text-gray-700">
+                        <MessageCircle className="h-5 w-5 text-amber-500" />
+                        <span className="font-semibold">WhatsApp: +91 9221763659</span>
+                      </p>
+                    </div>
+                    <Button 
+                      onClick={() => window.open('https://www.google.com/maps/dir//Smart+Education+Centre,+BDD+Chawl+No.+48,+Shop+No.+18,+Opp.+Jambori+Maidan,+Worli,+Mumbai+-+400018/@19.00222305428559,72.81729617466343', '_blank')}
+                      className="w-full bg-gradient-to-r from-amber-500 to-yellow-600 text-black hover:from-amber-600 hover:to-yellow-700 text-lg py-6 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1"
+                    >
+                      Get Directions
+                    </Button>
+                  </CardContent>
+                </Card>
+              </div>
+              
+              <div className="relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-amber-500 to-yellow-600 rounded-2xl transform rotate-2 opacity-20"></div>
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-amber-500">
+                  <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.396933247089!2d72.81729617466343!3d19.00222305428559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce91571b21e9%3A0x6a514b95150e2b88!2sSmart%20Education%20Centre!5e0!3m2!1sen!2sin!4v1768733190234!5m2!1sen!2sin" 
+                    width="100%" 
+                    height="450" 
+                    style={{border: 0}} 
+                    allowFullScreen="" 
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Smart Education Centre Location"
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-black text-white py-12 px-6">
         <div className="container mx-auto">
