@@ -670,7 +670,7 @@ const Home = () => {
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 Smart Education Centre. All rights reserved. | MS-CIT Course - Maharashtra Government Recognized</p>
+            <p>&copy; 2025 Smart Education Centre. All rights reserved. | MS-CIT Course - Maharashtra Government Recognized | <span onClick={() => navigate('/privacy')} className="hover:text-amber-400 transition-colors cursor-pointer underline">Privacy Policy</span></p>
           </div>
         </div>
       </footer>
