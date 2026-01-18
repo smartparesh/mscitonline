@@ -652,6 +652,7 @@ const Home = () => {
                 <li className="hover:text-amber-400 transition-colors cursor-pointer">Course Details</li>
                 <li className="hover:text-amber-400 transition-colors cursor-pointer">Certification</li>
                 <li className="hover:text-amber-400 transition-colors cursor-pointer">Contact Us</li>
+                <li onClick={() => navigate('/privacy')} className="hover:text-amber-400 transition-colors cursor-pointer">Privacy Policy</li>
               </ul>
             </div>
             <div>
