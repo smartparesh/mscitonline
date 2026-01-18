@@ -636,7 +636,12 @@ const Home = () => {
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
               <h3 className="text-xl font-bold mb-4 bg-gradient-to-r from-amber-400 to-yellow-500 bg-clip-text text-transparent">Smart Education Centre</h3>
-              <p className="text-gray-400">Maharashtra Government Recognized MS-CIT Online Course Provider</p>
+              <p className="text-gray-400 mb-3">Maharashtra Government Recognized MS-CIT Online Course Provider</p>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                BDD Chawl No. 48, Shop No. 18,<br/>
+                Opp. Jambori Maidan, Worli,<br/>
+                Mumbai - 400 018
+              </p>
             </div>
             <div>
               <h3 className="text-xl font-bold mb-4 text-amber-400">Quick Links</h3>
