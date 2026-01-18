@@ -617,7 +617,7 @@ const Home = () => {
             {/* Trust Badge */}
             <div className="mt-12 text-center">
               <div className="inline-block bg-gradient-to-r from-amber-50 to-yellow-50 border-2 border-amber-500 rounded-2xl px-8 py-6">
-                <p className="text-3xl font-bold text-black mb-2">500+ Students</p>
+                <p className="text-3xl font-bold text-black mb-2">2500+ Students</p>
                 <p className="text-gray-700 text-lg">Successfully Certified in MS-CIT</p>
               </div>
             </div>
