@@ -851,6 +851,24 @@ const Home = () => {
           </div>
         </div>
       </footer>
+
+      {/* Floating Mobile Action Buttons */}
+      <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-white border-t-2 border-amber-500 shadow-2xl">
+        <div className="flex gap-2 p-3">
+          <Button 
+            onClick={handleCallClick} 
+            className="flex-1 bg-black text-amber-500 hover:bg-gray-900 py-6 text-base font-bold transition-all duration-300 shadow-lg"
+          >
+            <Phone className="mr-2 h-5 w-5" /> Call Now
+          </Button>
+          <Button 
+            onClick={() => handleWhatsAppClick()} 
+            className="flex-1 bg-gradient-to-r from-amber-500 to-yellow-600 text-black hover:from-amber-600 hover:to-yellow-700 py-6 text-base font-bold transition-all duration-300 shadow-lg"
+          >
+            <MessageCircle className="mr-2 h-5 w-5" /> WhatsApp
+          </Button>
+        </div>
+      </div>
     </div>);
 
 };
