@@ -5,7 +5,7 @@ import { Input } from '../components/ui/input';
 import { Label } from '../components/ui/label';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../components/ui/accordion';
 import { Badge } from '../components/ui/badge';
-import { Phone, MessageCircle, CheckCircle, GraduationCap, Users, Clock, Monitor, Award, BookOpen, Laptop } from 'lucide-react';
+import { Phone, MessageCircle, CheckCircle, GraduationCap, Users, Clock, Monitor, Award, BookOpen, Laptop, MapPin } from 'lucide-react';
 import { toast } from 'sonner';
 
 const Home = () => {
