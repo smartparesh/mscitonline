@@ -448,6 +448,183 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Testimonials / Reviews Section */}
+      <section className="py-20 px-6 bg-white">
+        <div className="container mx-auto">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold text-center mb-4 text-black">What Our <span className="bg-gradient-to-r from-amber-500 to-yellow-600 bg-clip-text text-transparent">Students Say</span></h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-amber-500 to-yellow-600 mx-auto mb-4"></div>
+            <p className="text-center text-gray-600 text-lg mb-12">Real success stories from our MS-CIT students across Maharashtra</p>
+            
+            <div className="grid md:grid-cols-3 gap-6">
+              {/* Review 1 */}
+              <Card className="border-2 border-gray-100 hover:border-amber-500 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-gradient-to-br from-white to-amber-50">
+                <CardContent className="pt-6">
+                  <div className="flex items-center gap-1 mb-4">
+                    <Star className="h-5 w-5 fill-amber-500 text-amber-500" />
+                    <Star className="h-5 w-5 fill-amber-500 text-amber-500" />
+                    <Star className="h-5 w-5 fill-amber-500 text-amber-500" />
+                    <Star className="h-5 w-5 fill-amber-500 text-amber-500" />
+                    <Star className="h-5 w-5 fill-amber-500 text-amber-500" />
+                  </div>
+                  <Quote className="h-8 w-8 text-amber-500 mb-3" />
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    "Smart Education Centre made learning MS-CIT so easy! I got a government job and MS-CIT certificate was mandatory. The teachers explained everything clearly, even for someone like me who never touched a computer before."
+                  </p>
+                  <div className="flex items-center gap-3 mt-6">
+                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-amber-500 to-yellow-600 flex items-center justify-center">
+                      <span className="text-black font-bold text-lg">RS</span>
+                    </div>
+                    <div>
+                      <p className="font-bold text-black">Rajesh Salve</p>
+                      <p className="text-sm text-gray-600">Government Job Aspirant, Dadar</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Review 2 */}
+              <Card className="border-2 border-gray-100 hover:border-amber-500 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-gradient-to-br from-white to-amber-50">
+                <CardContent className="pt-6">
+                  <div className="flex items-center gap-1 mb-4">
+                    <Star className="h-5 w-5 fill-amber-500 text-amber-500" />
+                    <Star className="h-5 w-5 fill-amber-500 text-amber-500" />
+                    <Star className="h-5 w-5 fill-amber-500 text-amber-500" />
+                    <Star className="h-5 w-5 fill-amber-500 text-amber-500" />
+                    <Star className="h-5 w-5 fill-amber-500 text-amber-500" />
+                  </div>
+                  <Quote className="h-8 w-8 text-amber-500 mb-3" />
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    "Being a housewife, I had zero computer knowledge. Smart Education Centre's online classes were perfect - I could learn from home. Now I can handle all online work confidently. Thank you for the patience and support!"
+                  </p>
+                  <div className="flex items-center gap-3 mt-6">
+                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-amber-500 to-yellow-600 flex items-center justify-center">
+                      <span className="text-black font-bold text-lg">PP</span>
+                    </div>
+                    <div>
+                      <p className="font-bold text-black">Priya Patil</p>
+                      <p className="text-sm text-gray-600">Homemaker, Worli</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Review 3 */}
+              <Card className="border-2 border-gray-100 hover:border-amber-500 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-gradient-to-br from-white to-amber-50">
+                <CardContent className="pt-6">
+                  <div className="flex items-center gap-1 mb-4">
+                    <Star className="h-5 w-5 fill-amber-500 text-amber-500" />
+                    <Star className="h-5 w-5 fill-amber-500 text-amber-500" />
+                    <Star className="h-5 w-5 fill-amber-500 text-amber-500" />
+                    <Star className="h-5 w-5 fill-amber-500 text-amber-500" />
+                    <Star className="h-5 w-5 fill-amber-500 text-amber-500" />
+                  </div>
+                  <Quote className="h-8 w-8 text-amber-500 mb-3" />
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    "Best decision for my career! I completed MS-CIT from Smart Education Centre while working. Recorded classes helped me a lot. Now I'm confident with Excel, Word, and all computer basics. Highly recommended!"
+                  </p>
+                  <div className="flex items-center gap-3 mt-6">
+                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-amber-500 to-yellow-600 flex items-center justify-center">
+                      <span className="text-black font-bold text-lg">AM</span>
+                    </div>
+                    <div>
+                      <p className="font-bold text-black">Amit More</p>
+                      <p className="text-sm text-gray-600">Working Professional, Parel</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Review 4 */}
+              <Card className="border-2 border-gray-100 hover:border-amber-500 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-gradient-to-br from-white to-amber-50">
+                <CardContent className="pt-6">
+                  <div className="flex items-center gap-1 mb-4">
+                    <Star className="h-5 w-5 fill-amber-500 text-amber-500" />
+                    <Star className="h-5 w-5 fill-amber-500 text-amber-500" />
+                    <Star className="h-5 w-5 fill-amber-500 text-amber-500" />
+                    <Star className="h-5 w-5 fill-amber-500 text-amber-500" />
+                    <Star className="h-5 w-5 fill-amber-500 text-amber-500" />
+                  </div>
+                  <Quote className="h-8 w-8 text-amber-500 mb-3" />
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    "Excellent teaching and support! I was nervous about computers, but the step-by-step guidance made it simple. MS-CIT certificate opened many job opportunities for me. Very grateful to Smart Education Centre!"
+                  </p>
+                  <div className="flex items-center gap-3 mt-6">
+                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-amber-500 to-yellow-600 flex items-center justify-center">
+                      <span className="text-black font-bold text-lg">SK</span>
+                    </div>
+                    <div>
+                      <p className="font-bold text-black">Sneha Kamble</p>
+                      <p className="text-sm text-gray-600">College Student, Mumbai Central</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Review 5 */}
+              <Card className="border-2 border-gray-100 hover:border-amber-500 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-gradient-to-br from-white to-amber-50">
+                <CardContent className="pt-6">
+                  <div className="flex items-center gap-1 mb-4">
+                    <Star className="h-5 w-5 fill-amber-500 text-amber-500" />
+                    <Star className="h-5 w-5 fill-amber-500 text-amber-500" />
+                    <Star className="h-5 w-5 fill-amber-500 text-amber-500" />
+                    <Star className="h-5 w-5 fill-amber-500 text-amber-500" />
+                    <Star className="h-5 w-5 fill-amber-500 text-amber-500" />
+                  </div>
+                  <Quote className="h-8 w-8 text-amber-500 mb-3" />
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    "At 55, I thought I was too old to learn computers. Smart Education Centre proved me wrong! The teachers were patient, classes were easy to understand. Now I can do online banking and use WhatsApp confidently!"
+                  </p>
+                  <div className="flex items-center gap-3 mt-6">
+                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-amber-500 to-yellow-600 flex items-center justify-center">
+                      <span className="text-black font-bold text-lg">VD</span>
+                    </div>
+                    <div>
+                      <p className="font-bold text-black">Vijay Deshmukh</p>
+                      <p className="text-sm text-gray-600">Retired Professional, Worli</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Review 6 */}
+              <Card className="border-2 border-gray-100 hover:border-amber-500 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 bg-gradient-to-br from-white to-amber-50">
+                <CardContent className="pt-6">
+                  <div className="flex items-center gap-1 mb-4">
+                    <Star className="h-5 w-5 fill-amber-500 text-amber-500" />
+                    <Star className="h-5 w-5 fill-amber-500 text-amber-500" />
+                    <Star className="h-5 w-5 fill-amber-500 text-amber-500" />
+                    <Star className="h-5 w-5 fill-amber-500 text-amber-500" />
+                    <Star className="h-5 w-5 fill-amber-500 text-amber-500" />
+                  </div>
+                  <Quote className="h-8 w-8 text-amber-500 mb-3" />
+                  <p className="text-gray-700 leading-relaxed mb-4">
+                    "Perfect place for MS-CIT! Live classes, recorded videos, doubt-solving - everything was excellent. I cleared my exam in first attempt. All thanks to Smart Education Centre's dedicated team. Strongly recommended!"
+                  </p>
+                  <div className="flex items-center gap-3 mt-6">
+                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-amber-500 to-yellow-600 flex items-center justify-center">
+                      <span className="text-black font-bold text-lg">MP</span>
+                    </div>
+                    <div>
+                      <p className="font-bold text-black">Manish Pawar</p>
+                      <p className="text-sm text-gray-600">Job Seeker, Lower Parel</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Trust Badge */}
+            <div className="mt-12 text-center">
+              <div className="inline-block bg-gradient-to-r from-amber-50 to-yellow-50 border-2 border-amber-500 rounded-2xl px-8 py-6">
+                <p className="text-3xl font-bold text-black mb-2">500+ Students</p>
+                <p className="text-gray-700 text-lg">Successfully Certified in MS-CIT</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="py-20 px-6 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto">
