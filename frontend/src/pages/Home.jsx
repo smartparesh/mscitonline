@@ -172,7 +172,7 @@ const Home = () => {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="relative group order-2 md:order-1">
                 <div className="absolute inset-0 bg-gradient-to-br from-amber-500 to-yellow-600 rounded-2xl transform -rotate-3 group-hover:-rotate-6 transition-all duration-300"></div>
-                <img src="https://images.unsplash.com/photo-1569653402334-2e98fbaa80ee" alt="Indian students practicing computers" className="relative rounded-2xl shadow-2xl w-full h-[400px] object-cover" />
+                <img src="https://images.unsplash.com/photo-1627599936744-51d288f89af4" alt="Students practicing on modern computers with LED monitors" className="relative rounded-2xl shadow-2xl w-full h-[400px] object-cover" />
               </div>
               
               <div className="space-y-4 order-1 md:order-2">
