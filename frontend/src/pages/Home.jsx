@@ -26,7 +26,14 @@ const Home = () => {
 
   const whatsappNumber = '919221763659';
 
-  const handleWhatsAppClick = (message = 'Hi, I want to enquire about MS-CIT Online Course') => {
+  const handleWhatsAppClick = () => {
+    // Open modal to capture lead details
+    setIsModalOpen(true);
+  };
+
+  const handleModalSuccess = (leadData) => {
+    // After lead is saved, redirect to WhatsApp
+    const message = `Hi, I'm ${leadData.name}. I want to learn MS-CIT.`;
     const encodedMessage = encodeURIComponent(message);
     window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, '_blank');
   };
@@ -35,18 +42,50 @@ const Home = () => {
     window.location.href = 'tel:+919221763659';
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    
     if (!formData.fullName || !formData.mobile || !formData.city) {
       toast.error('Please fill all fields');
       return;
     }
 
-    const message = `Hi, I'm ${formData.fullName} from ${formData.city}. I want to enquire about MS-CIT Online Course. My mobile number is ${formData.mobile}.`;
-    handleWhatsAppClick(message);
+    // Validate mobile number
+    if (!/^\d{10}$/.test(formData.mobile)) {
+      toast.error('Please enter a valid 10-digit mobile number');
+      return;
+    }
 
-    // Reset form
-    setFormData({ fullName: '', mobile: '', city: '' });
+    setIsSubmitting(true);
+
+    try {
+      // Save lead to database
+      await axios.post(`${API}/leads`, {
+        name: formData.fullName,
+        mobile: formData.mobile,
+        city: formData.city,
+        source: 'enquiry_form'
+      });
+
+      // Navigate to thank you page with lead data
+      navigate('/thank-you', {
+        state: {
+          leadData: {
+            name: formData.fullName,
+            mobile: formData.mobile,
+            city: formData.city
+          }
+        }
+      });
+
+      // Reset form
+      setFormData({ fullName: '', mobile: '', city: '' });
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      toast.error('Failed to submit form. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
