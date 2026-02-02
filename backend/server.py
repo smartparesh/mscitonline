@@ -81,6 +81,53 @@ async def get_status_checks():
     
     return status_checks
 
+# Lead API Endpoints
+@api_router.post("/leads", response_model=Lead)
+async def create_lead(input: LeadCreate):
+    lead_dict = input.dict()
+    lead_obj = Lead(**lead_dict)
+    _ = await db.leads.insert_one(lead_obj.dict())
+    return lead_obj
+
+@api_router.get("/leads", response_model=List[Lead])
+async def get_leads():
+    leads = await db.leads.find().sort("timestamp", -1).to_list(10000)
+    return [Lead(**lead) for lead in leads]
+
+@api_router.get("/leads/download")
+async def download_leads():
+    from fastapi.responses import StreamingResponse
+    import io
+    import csv
+    
+    leads = await db.leads.find().sort("timestamp", -1).to_list(10000)
+    
+    # Create CSV in memory
+    output = io.StringIO()
+    writer = csv.writer(output)
+    
+    # Write header
+    writer.writerow(['ID', 'Name', 'Mobile', 'City', 'Source', 'Timestamp'])
+    
+    # Write data
+    for lead in leads:
+        writer.writerow([
+            lead.get('id', ''),
+            lead.get('name', ''),
+            lead.get('mobile', ''),
+            lead.get('city', ''),
+            lead.get('source', ''),
+            lead.get('timestamp', '')
+        ])
+    
+    output.seek(0)
+    
+    return StreamingResponse(
+        iter([output.getvalue()]),
+        media_type="text/csv",
+        headers={"Content-Disposition": "attachment; filename=mscit_leads.csv"}
+    )
+
 # Include the router in the main app
 app.include_router(api_router)
 
