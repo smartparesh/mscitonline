@@ -37,6 +37,21 @@ class StatusCheck(BaseModel):
 class StatusCheckCreate(BaseModel):
     client_name: str
 
+# Lead Model for MS-CIT Enquiries
+class Lead(BaseModel):
+    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
+    name: str
+    mobile: str
+    city: str = ""
+    source: str  # "whatsapp_button", "enquiry_form"
+    timestamp: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+
+class LeadCreate(BaseModel):
+    name: str
+    mobile: str
+    city: str = ""
+    source: str
+
 # Add your routes to the router instead of directly to app
 @api_router.get("/")
 async def root():
