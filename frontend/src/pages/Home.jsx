@@ -32,10 +32,16 @@ const Home = () => {
   };
 
   const handleModalSuccess = (leadData) => {
-    // After lead is saved, redirect to WhatsApp
-    const message = `Hi, I'm ${leadData.name}. I want to learn MS-CIT.`;
-    const encodedMessage = encodeURIComponent(message);
-    window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, '_blank');
+    // After lead is saved, navigate to Thank You page
+    navigate('/thank-you', {
+      state: {
+        leadData: {
+          name: leadData.name,
+          mobile: leadData.mobile,
+          city: leadData.city
+        }
+      }
+    });
   };
 
   const handleCallClick = () => {
