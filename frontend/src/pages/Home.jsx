@@ -770,7 +770,7 @@ const Home = () => {
                   
                   <Button type="submit" disabled={isSubmitting} className="w-full bg-gradient-to-r from-amber-500 to-yellow-600 text-black hover:from-amber-600 hover:to-yellow-700 h-14 text-lg font-bold transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 disabled:opacity-50 disabled:cursor-not-allowed">
                     <MessageCircle className="mr-2 h-5 w-5" /> 
-                    {isSubmitting ? 'Submitting...' : 'Get Course Details on WhatsApp'}
+                    {isSubmitting ? 'Submitting...' : 'Submit Enquiry'}
                   </Button>
                 </form>
               </CardContent>
