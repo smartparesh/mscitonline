@@ -915,6 +915,13 @@ const Home = () => {
           </Button>
         </div>
       </div>
+
+      {/* Lead Capture Modal */}
+      <LeadCaptureModal 
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        onSuccess={handleModalSuccess}
+      />
     </div>);
 
 };
