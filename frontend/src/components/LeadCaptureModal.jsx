@@ -13,14 +13,15 @@ const API = `${BACKEND_URL}/api`;
 const LeadCaptureModal = ({ isOpen, onClose, onSuccess }) => {
   const [formData, setFormData] = useState({
     name: '',
-    mobile: ''
+    mobile: '',
+    city: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     
-    if (!formData.name || !formData.mobile) {
+    if (!formData.name || !formData.mobile || !formData.city) {
       toast.error('Please fill all required fields');
       return;
     }
@@ -38,13 +39,13 @@ const LeadCaptureModal = ({ isOpen, onClose, onSuccess }) => {
       await axios.post(`${API}/leads`, {
         name: formData.name,
         mobile: formData.mobile,
-        city: '',
+        city: formData.city,
         source: 'whatsapp_button'
       });
 
       // Close modal and trigger success callback
       onSuccess(formData);
-      setFormData({ name: '', mobile: '' });
+      setFormData({ name: '', mobile: '', city: '' });
       onClose();
     } catch (error) {
       console.error('Error saving lead:', error);
