@@ -8,6 +8,11 @@ import { Badge } from '../components/ui/badge';
 import { Phone, MessageCircle, CheckCircle, GraduationCap, Users, Clock, Monitor, Award, BookOpen, Laptop, MapPin, Star, Quote } from 'lucide-react';
 import { toast } from 'sonner';
 import { useNavigate } from 'react-router-dom';
+import LeadCaptureModal from '../components/LeadCaptureModal';
+import axios from 'axios';
+
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const API = `${BACKEND_URL}/api`;
 
 const Home = () => {
   const navigate = useNavigate();
@@ -16,6 +21,8 @@ const Home = () => {
     mobile: '',
     city: ''
   });
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const whatsappNumber = '919221763659';
 
