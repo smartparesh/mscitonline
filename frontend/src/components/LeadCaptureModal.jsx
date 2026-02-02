@@ -96,6 +96,19 @@ const LeadCaptureModal = ({ isOpen, onClose, onSuccess }) => {
             />
           </div>
 
+          <div className="space-y-2">
+            <Label htmlFor="modal-city">City *</Label>
+            <Input
+              id="modal-city"
+              placeholder="Enter your city"
+              value={formData.city}
+              onChange={(e) => setFormData({ ...formData, city: e.target.value })}
+              className="h-12"
+              required
+              disabled={isSubmitting}
+            />
+          </div>
+
           <div className="flex gap-3 pt-4">
             <Button
               type="button"
