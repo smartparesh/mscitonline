@@ -65,7 +65,7 @@ const webpackConfig = {
       if (config.enableHealthCheck && healthPluginInstance) {
         webpackConfig.plugins.push(healthPluginInstance);
       }
-      return webpackConfig;
+      webpackConfig.plugins = webpackConfig.plugins.filter(p => p.constructor && p.constructor.name !== 'ForkTsCheckerWebpackPlugin'); return webpackConfig;
     },
   },
 };
