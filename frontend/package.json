@@ -1,7 +1,8 @@
 {
   "name": "frontend",
   "version": "0.1.0",
-  "private": true,   "engines": { "node": "20.x" },
+  "private": true,
+  "engines": { "node": "20.x" },
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",
     "@radix-ui/react-accordion": "^1.2.8",
@@ -31,7 +32,8 @@
     "@radix-ui/react-toggle": "^1.1.6",
     "@radix-ui/react-toggle-group": "^1.1.7",
     "@radix-ui/react-tooltip": "^1.2.4",
-    "axios": "^1.8.4",     "dotenv": "^16.0.0",
+    "axios": "^1.8.4",
+    "dotenv": "^16.0.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "^1.1.1",
@@ -58,7 +60,8 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "test": "craco test"
+    "test": "craco test",
+    "postinstall": "rm -rf node_modules/fork-ts-checker-webpack-plugin/node_modules"
   },
   "browserslist": {
     "production": [
@@ -74,7 +77,9 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "ajv": "^8.0.0",     "ajv-formats": "^2.1.1",     "@craco/craco": "^7.1.0",
+    "ajv": "^8.0.0",
+    "ajv-formats": "^2.1.1",
+    "@craco/craco": "^7.1.0",
     "@eslint/js": "9.23.0",
     "autoprefixer": "^10.4.20",
     "eslint": "9.23.0",
@@ -86,5 +91,10 @@
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.17"
   },
-  "overrides": { "ajv": "^8.0.0", "ajv-formats": "^2.1.1", "fork-ts-checker-webpack-plugin": "6.5.3" },   "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+  "overrides": {
+    "ajv": "^8.0.0",
+    "ajv-formats": "^2.1.1",
+    "ajv-keywords": "^5.1.0",
+    "fork-ts-checker-webpack-plugin": "6.5.3"
+  }
 }
